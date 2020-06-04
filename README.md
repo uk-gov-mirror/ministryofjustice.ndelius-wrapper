@@ -2,8 +2,11 @@
 Fake ndelius for wrapping ndelius new tech apps
 
 ## Build
+
+Ensure you are using Node [lts/dubnium](https://nodejs.org/download/release/latest-dubnium/)
+
 ```
-npm install
+npm i
 ```
 
 ## Run
