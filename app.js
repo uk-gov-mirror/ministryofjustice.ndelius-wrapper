@@ -14,6 +14,10 @@ const sfpsr = require('./routes/sfpsr')
 const sfpsrList = require('./routes/sfpsr_list')
 const sfpsrUpdate = require('./routes/sfpsr_update')
 const sfpsrDelete = require('./routes/sfpsr_delete')
+const oralReport = require('./routes/oralReport')
+const oralReportList = require('./routes/oralReport_list')
+const oralReportUpdate = require('./routes/oralReport_update')
+const oralReportDelete = require('./routes/oralReport_delete')
 const paroleParom1Report = require('./routes/paroleParom1Report')
 const paroleParom1ReportList = require('./routes/paroleParom1Report_list')
 const paroleParom1ReportUpdate = require('./routes/paroleParom1Report_update')
@@ -64,6 +68,10 @@ app.use('/sfpsr', sfpsr);
 app.use('/sfpsr_list', sfpsrList);
 app.use('/sfpsr_update', sfpsrUpdate);
 app.use('/sfpsr_delete', sfpsrDelete);
+app.use('/oralReport', oralReport);
+app.use('/oralReport_list', oralReportList);
+app.use('/oralReport_update', oralReportUpdate);
+app.use('/oralReport_delete', oralReportDelete);
 app.use('/paroleParom1Report', paroleParom1Report);
 app.use('/paroleParom1Report_list', paroleParom1ReportList);
 app.use('/paroleParom1Report_update', paroleParom1ReportUpdate);

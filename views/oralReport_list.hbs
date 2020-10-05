@@ -1,0 +1,28 @@
+<h1>Document List</h1>
+<h2><em>Linked To:</em><span>Court Report</span></h2>
+<table>
+<thead>
+<tr>
+    <th>Document</th>
+    <th>Author</th>
+    <th>Date Created</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+</thead>
+<tbody>
+    {{#each documents}}
+        <tr>
+            <td>{{this.filename}}</td>
+            <td>{{this.onBehalfOfUser}}</td>
+            <td>{{this.timestamp}}</td>
+            <td>{{this.crn}}</td>
+            <td><a href='/pdf?id={{this._id}}'>View</a></td>
+            <td><a href='/oralReport_update?id={{this._id}}'>Update</a></td>
+            <td><a href='/oralReport_delete?id={{this._id}}'>Delete</a></td>
+        </tr>
+    {{/each}}
+</tbody>
+</table>
